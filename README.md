@@ -1,2 +1,2 @@
-# collapsible
-A Collapsible Android ListView.
+# Collapsible
+A Collapsible Android ListView with Multiple Levels.
