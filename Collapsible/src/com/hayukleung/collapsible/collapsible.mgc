@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class
+        name="com.cndatacom.cdcutils.view.listview.collapsible.TreeViewItemClickListener.TreeViewClickListener"
+        x="1003" y="455">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class
+        name="com.cndatacom.cdcutils.view.listview.collapsible.TreeViewAdapter"
+        x="613" y="306">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.cndatacom.cdcutils.view.listview.collapsible.ITreeView"/>
+        <Association
+            destinationClassName="com.cndatacom.cdcutils.view.listview.collapsible.Element"
+            endpointName="mVisibleElements" kind="Simple">
+            <Point x="711" y="300"/>
+            <Point x="711" y="214"/>
+        </Association>
+        <Association
+            destinationClassName="com.cndatacom.cdcutils.view.listview.collapsible.Element"
+            endpointName="mAllElements" kind="Simple"/>
+        <Communication destinationClassName="com.cndatacom.cdcutils.view.listview.collapsible.IElement"/>
+        <Communication destinationClassName="com.cndatacom.cdcutils.view.listview.collapsible.Element"/>
+    </Class>
+    <Class
+        name="com.cndatacom.cdcutils.view.listview.collapsible.TreeViewListView"
+        x="488" y="493">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class
+        name="com.cndatacom.cdcutils.view.listview.collapsible.Element"
+        x="156" y="76">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.cndatacom.cdcutils.view.listview.collapsible.IElement"/>
+        <Association
+            destinationClassName="com.cndatacom.cdcutils.view.listview.collapsible.Element"
+            endpointName="children" kind="Simple">
+            <Point x="156" y="184"/>
+            <Point x="125" y="184"/>
+            <Point x="87" y="184"/>
+            <Point x="87" y="215"/>
+            <Point x="118" y="215"/>
+        </Association>
+        <Communication destinationClassName="com.cndatacom.cdcutils.view.listview.collapsible.IElement"/>
+        <Communication destinationClassName="com.cndatacom.cdcutils.view.listview.collapsible.IElement.TraverseChildrenListener"/>
+    </Class>
+    <Class
+        name="com.cndatacom.cdcutils.view.listview.collapsible.IElement"
+        x="157" y="462">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class
+        name="com.cndatacom.cdcutils.view.listview.collapsible.TreeViewAdapter.ViewHolder"
+        x="761" y="189">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class
+        name="com.cndatacom.cdcutils.view.listview.collapsible.IOrgDB"
+        x="8" y="474">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class
+        name="com.cndatacom.cdcutils.view.listview.collapsible.ITreeView"
+        x="614" y="503">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class
+        name="com.cndatacom.cdcutils.view.listview.collapsible.TreeViewItemClickListener"
+        x="963" y="347">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.cndatacom.cdcutils.view.listview.collapsible.TreeViewAdapter"
+            endpointName="mTreeViewAdapter" kind="Simple"/>
+        <Association
+            destinationClassName="com.cndatacom.cdcutils.view.listview.collapsible.TreeViewItemClickListener.TreeViewClickListener"
+            endpointName="mTreeViewClickListener" kind="Simple"/>
+        <Communication destinationClassName="com.cndatacom.cdcutils.view.listview.collapsible.TreeViewItemClickListener.TreeViewClickListener"/>
+        <Communication destinationClassName="com.cndatacom.cdcutils.view.listview.collapsible.TreeViewAdapter"/>
+        <Communication destinationClassName="com.cndatacom.cdcutils.view.listview.collapsible.Element"/>
+    </Class>
+    <Class
+        name="com.cndatacom.cdcutils.view.listview.collapsible.ElementException"
+        x="481" y="78">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class
+        name="com.cndatacom.cdcutils.view.listview.collapsible.IElement.TraverseChildrenListener"
+        x="39" y="377">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+</ClassDiagram>
